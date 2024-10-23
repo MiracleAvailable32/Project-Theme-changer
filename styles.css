@@ -1,0 +1,109 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    color: white    ;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+/* Header styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: white; /* Darker text for better contrast */
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Button styling */
+button {
+    padding: 15px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #007bff; /* Default color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none; /* Remove outline on focus */
+}
+
+button:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Reset on click */
+}
+
+/* Individual button colors */
+#sendCookieButton {
+    background-color: #28a745; /* Garden Green */
+}
+
+#button2 {
+    background-color: #fd7e14; /* Sunset Orange */
+}
+
+#button3 {
+    background-color: #6c757d; /* Nardo Grey */
+}
+
+#button4 {
+    background-color: #343a40; /* Midnight Blue */
+}
+
+#button5 {
+    background-color: #dc3545; /* Ruby Red */
+}
+
+#button6 {
+    background-color: #212529; /* Midnight Black */
+}
+
+#button7 {
+    background-color: #ffc107; /* Bright Yellow */
+}
+
+/* Status message styling */
+.status-message {
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    opacity: 0; /* Start hidden for animation */
+    transition: opacity 0.5s ease;
+}
+
+/* Show status message */
+.status-message.show {
+    opacity: 1; /* Fade in effect */
+}
